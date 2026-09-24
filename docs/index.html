@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile Game Stage</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-bar">
+            <div class="header-ui">
+                <span>WORLD 1-1</span>
+                <span>Nara Vocational Training School</span>
+                <span id="time">TIME 00:00:00</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- タイトル -->
+    <div class="title-board">
+        <div class="spark-left-big">✦</div>
+        <div class="spark-left-small">✦</div>
+        <h1>MY PROFILE<br>WORLD</h1>
+    </div>
+
+    <!-- ゲームステージ -->
+    <div class="stage" id="stage">
+        <div class="bg">
+
+            <div class="cloud cloud1"></div>
+            <div class="cloud cloud2"></div>
+
+            <div class="mountain mountain1"></div>
+            <div class="mountain mountain2"></div>
+
+            <div class="pipe pipe-left"></div>
+            <div class="pipe pipe-right"></div>
+
+            <div class="firepakkun"></div>
+
+            <div class="kuribo kuribo1"></div>
+            <div class="kuribo kuribo2"></div>
+
+            <div class="magnum magnum1"></div>
+            <div class="magnum magnum2"></div>
+
+            <div class="jugem"></div>
+
+            <div class="block block1"></div>
+            <div class="block block2"></div>
+            <div class="block-special"></div>
+            <div class="question-block"></div>
+            <div class="block block3"></div>
+
+            <div class="block block4"></div>
+            <div class="block block5"></div>
+            <div class="block block6"></div>
+            <div class="block block7"></div>
+
+            <div class="coin coin1"></div>
+            <div class="coin coin2"></div>
+            <div class="coin coin3"></div>
+            <div class="coin coin4"></div>
+
+        </div>
+
+        <div class="player" id="player"></div>
+    </div>
+
+    <!-- STATUS HUD -->
+    <section class="status-hud">
+        <p>HTML/CSS Lv.35 ★★★☆☆</p>
+        <p>Java Lv.10 ★☆☆☆☆</p>
+        <p>FE Exam Lv.8 ★☆☆☆☆</p>
+    </section>
+
+    <!-- 自己紹介カード -->
+    <main class="content">
+
+        <section class="card">
+            <button class="card-title" type="button">
+                <span class="icon"></span>
+                <span>PLAYER DATA / 基本情報</span>
+            </button>
+
+            <div class="card-body">
+                <div class="card-body-inner">
+
+                    <div class="player-data">
+                        <div class="player-face">
+                            <img src="image/player.png" alt="プレイヤー">
+                        </div>
+
+                        <div class="player-info">
+
+                            <div class="player-row">
+                                <span class="label name-label">NAME</span>
+                                <div class="status-name">
+                                    <span class="kana-name">ニシモト ダイケイ</span>
+                                    <span class="jp-name">西本 大啓</span>
+                                </div>
+                            </div>
+
+                            <div class="player-row">
+                                <span class="label">AGE</span>
+                                <span class="value">45</span>
+                            </div>
+
+                            <div class="player-row">
+                                <span class="label">BIRTHDAY</span>
+                                <span class="value">1981年3月5日</span>
+                            </div>
+
+                            <div class="player-row">
+                                <span class="label">PLACE OF BIRTH</span>
+                                <span class="value">奈良市</span>
+                            </div>
+
+                            <div class="player-row">
+                                <span class="label">TYPE</span>
+                                <span class="value">Ａ型</span>
+                            </div>
+
+                            <div class="player-row">
+                                <span class="label">SIGN</span>
+                                <span class="value">うお座</span>
+                            </div>
+
+                            <div class="player-row">
+                                <span class="label">ZODIAC</span>
+                                <span class="value">酉</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <button class="card-title" type="button">
+                <span class="icon"></span>
+                <span>HOBBY / 趣味</span>
+            </button>
+
+            <div class="card-body">
+                <div class="card-body-inner">
+
+                    <div class="info-grid">
+
+                        <div class="info-box">
+                            <h3>SOCCER / サッカー</h3>
+                            <ul>
+                                <li>小中高 サッカー部</li>
+                                <li>奈良県社会人リーグ経験</li>
+                                <li>スタジアム・TV観戦</li>
+                                <li>サイン収集</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-box">
+                            <h3>PHOTO / 写真影</h3>
+                            <ul>
+                                <li>風景撮影</li>
+                                <li>Instagram</li>
+                                <li>Webアルバム（Flickr）</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-box">
+                            <h3>TRAVEL / 旅行</h3>
+                            <ul>
+                                <li>国内・海外</li>
+                                <li>サッカー観戦</li>
+                                <li>世界遺産巡り</li>
+                                <li>マンホールカード集め</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-box">
+                            <h3>ENTERTAINMENT / 娯楽</h3>
+                            <ul>
+                                <li>映画鑑賞</li>
+                                <li>アニメ鑑賞</li>
+                                <li>音楽鑑賞</li>
+                                <li>カラオケ</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <button class="card-title" type="button">
+                <span class="icon"></span>
+                <span>STATUS / 性格</span>
+            </button>
+
+            <div class="card-body">
+                <div class="card-body-inner">
+
+                    <div class="info-grid">
+
+                        <div class="info-box">
+                            <h3>TYPE / 性格</h3>
+                            <ul>
+                                <li>マイペース</li>
+                                <li>慎重派</li>
+                                <li>コレクター気質</li>
+                                <li>好奇心旺盛</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-box">
+                            <h3>MENTAL / 内面</h3>
+                            <ul>
+                                <li>情を大切にする</li>
+                                <li>自分を客観視しがち</li>
+                                <li>負けず嫌い</li>
+                                <li>心配性</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-box">
+                            <h3>STYLE / 特徴</h3>
+                            <ul>
+                                <li>好きなことには行動的</li>
+                                <li>人見知り</li>
+                                <li>極度のあがり症</li>
+                                <li>没入型</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-box">
+                            <h3>ANIMAL / 動物占い</h3>
+                            <ul>
+                                <li>放浪の狼</li>
+                                <li>自由人</li>
+                                <li>こだわり強め</li>
+                                <li>職人気質</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <button class="card-title" type="button">
+                <span class="icon"></span>
+                <span>CAREER / 職歴・経験</span>
+            </button>
+
+            <div class="card-body">
+                <div class="card-body-inner">
+
+                    <div class="career-log">
+
+                        <div class="career-box">
+                            <h3>WORK / 職歴</h3>
+                            <ul>
+                                <li>保育士</li>
+                                <li>Webデザイン</li>
+                                <li>QA・テスト設計</li>
+                                <li>B型就労支援事業所 支援員</li>
+                            </ul>
+                        </div>
+
+                        <div class="career-box">
+                            <h3>PART TIME / アルバイト</h3>
+                            <ul>
+                                <li>スーパー万代総菜担当</li>
+                                <li>現場仕事（キッチン設置補助）</li>
+                                <li>コンビニ店員</li>
+                                <li>ゴルフ練習場（フロント・打席管理）</li>
+                                <li>飲食店（調理・ホールスタッフ）</li>
+                                <li>ミスタードーナツ（仕上げ担当）</li>
+                                <li>レタス・キャベツ畑（苗植え・収穫）</li>
+                                <li>食品工場（製造ライン）</li>
+                                <li>劇団四季（舞台設営補助）</li>
+                                <li>配送ドライバー（オーストラリア）</li>
+                            </ul>
+                        </div>
+
+                        <div class="career-box">
+                            <h3>EXPERIENCE / 経験</h3>
+                            <ul>
+                                <li>ヒューマンアカデミー<br>グラフィックデザイン科 中退</li>
+                                <li>大阪芸術大学短期大学部<br>通信教育部 保育学科 卒業</li>
+                                <li>職業訓練校 CAD／NC技術科 卒業</li>
+                                <li>海外居候生活（イングランド）</li>
+                                <li>ワーキングホリデー（オーストラリア）</li>
+                                <li>ワールドカップ観戦一人旅<br>（ドイツ・ブラジル・ロシア）</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <button class="card-title" type="button">
+                <span class="icon"></span>
+                <span>SKILL / スキル・資格</span>
+            </button>
+
+            <div class="card-body">
+                <div class="card-body-inner">
+
+                    <div class="info-grid">
+
+                        <div class="info-box">
+                            <h3>COMPLETE / 取得済み</h3>
+                            <ul>
+                                <li>保育士</li>
+                                <li>カラーコーディネート3級</li>
+                                <li>Word文書処理技能認定試験 2級</li>
+                                <li>Excel表計算処理技能認定試験 2級</li>
+                                <li>PowerPointプレゼンテーション技能認定試験 上級</li>
+                                <li>ITパスポート（合格予定）</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-box">
+                            <h3>TRAINING / 勉強中</h3>
+                            <ul>
+                                <li>Webクリエイター能力認定試験</li>
+                                <li>Javaブロンズ</li>
+                                <li>基本情報技術者</li>
+                                <li>ジェネラリスト検定</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-box">
+                            <h3>SPECIALTY / 特技</h3>
+                            <ul>
+                                <li>水泳</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-box">
+                            <h3>RETRY / 再挑戦予定</h3>
+                            <ul>
+                                <li>英会話</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- モーダル -->
+    <div class="modal" id="modal">
+        <div class="modal-card">
+            <button class="modal-title" id="modalClose" type="button">
+                <span class="modal-icon">×</span>
+                <span id="modalTitle"></span>
+            </button>
+
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        © 2026 Daikei Nishimoto
+    </footer>
+
+    <script>
+        const timeText = document.getElementById("time");
+
+        function updateTime() {
+            const now = new Date();
+
+            const hour = String(now.getHours()).padStart(2, "0");
+            const minute = String(now.getMinutes()).padStart(2, "0");
+            const second = String(now.getSeconds()).padStart(2, "0");
+
+            timeText.textContent = `TIME ${hour}:${minute}:${second}`;
+        }
+
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script>
+
+    <script>
+        const cards = document.querySelectorAll(".card");
+        const content = document.querySelector(".content");
+
+        const modal = document.getElementById("modal");
+        const modalCard = document.querySelector(".modal-card");
+        const modalClose = document.getElementById("modalClose");
+        const modalTitle = document.getElementById("modalTitle");
+        const modalBody = document.getElementById("modalBody");
+        const modalIcon = document.querySelector(".modal-icon");
+
+        const coinSound = new Audio("image/coin.mp3");
+        coinSound.volume = 0.5;
+
+        function openModal(card) {
+            modal.classList.remove("closing");
+
+            coinSound.currentTime = 0;
+            coinSound.play();
+
+            const title = card.querySelector(".card-title span:last-child").textContent;
+            const body = card.querySelector(".card-body-inner").innerHTML;
+
+            modalTitle.textContent = title;
+            modalBody.innerHTML = body;
+
+            modalIcon.classList.remove("spin");
+            void modalIcon.offsetWidth;
+            modalIcon.classList.add("spin");
+
+            modal.classList.add("show");
+            content.classList.add("has-open");
+        }
+
+        function closeModal() {
+            modal.classList.add("closing");
+            content.classList.remove("has-open");
+            modalIcon.classList.remove("spin");
+
+            setTimeout(() => {
+                modal.classList.remove("show");
+                modal.classList.remove("closing");
+            }, 650);
+        }
+
+        cards.forEach(card => {
+            card.addEventListener("click", event => {
+                event.stopPropagation();
+                openModal(card);
+            });
+        });
+
+        modalClose.addEventListener("click", event => {
+            event.stopPropagation();
+            closeModal();
+        });
+
+        modal.addEventListener("click", closeModal);
+
+    </script>
+
+    <script>
+        const player = document.getElementById("player");
+
+        let y = 0;
+        let velocityY = 0;
+        let isJumping = false;
+
+        function startJump() {
+            if (isJumping) {
+                return;
+            }
+
+            velocityY = -15;
+            isJumping = true;
+
+            player.style.backgroundImage = 'url("image/mario_jump.png")';
+        }
+
+        document.addEventListener("click", event => {
+            const isUiClick =
+                event.target.closest(".card") ||
+                event.target.closest(".modal") ||
+                event.target.closest(".header-bar") ||
+                event.target.closest(".footer");
+
+            if (isUiClick) {
+                return;
+            }
+
+            startJump();
+        });
+
+        function jumpLoop() {
+            velocityY += 0.8;
+            y += velocityY;
+
+            if (y > 0) {
+                y = 0;
+                velocityY = 0;
+                isJumping = false;
+
+                player.style.backgroundImage = 'url("image/mario.png")';
+            }
+
+            player.style.transform = `translateY(${y}px)`;
+
+            requestAnimationFrame(jumpLoop);
+        }
+
+        jumpLoop();
+    </script>
+
+</body>
+
+</html>
